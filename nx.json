@@ -16,14 +16,15 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": [
           "build",
           "lint",
           "test",
           "e2e"
-        ]
+        ],
+        "accessToken": "Y2ZhYTkzMGItM2QyYy00NGRjLWI0NjAtYWQ2MTQ1M2FjOGFkfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -34,5 +35,8 @@
         "projects": "dependencies"
       }
     ]
-  }
+  },
+  "plugins": [
+    "@nxrocks/nx-flutter"
+  ]
 }
